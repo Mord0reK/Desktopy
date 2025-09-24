@@ -12,4 +12,4 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Run tests (przykład)
-        run: python3 Strona/src/scan_directories.py
+        run: python3 scan_directories.py
