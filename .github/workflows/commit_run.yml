@@ -3,6 +3,12 @@ name: Commit Run
 on:
   push: # Uruchamiaj workflow przy każdym pushu (commit)
 
+env:
+    CF_ACCOUNT: ${{ secrets.CF_ACCOUNT }}
+    CF_ACCOUNT_API: ${{ secrets.CF_ACCOUNT_API }}
+    DB_ID: ${{ secrets.DB_ID }}
+
+
 jobs:
   build:
     runs-on: ubuntu-latest
