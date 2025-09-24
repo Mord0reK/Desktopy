@@ -25,6 +25,9 @@ CONFIG = {
     "project_root": os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
     "cloudflare_api_url": "https://api.cloudflare.com/client/v4/accounts/{account_id}/d1/database/{database_id}/query",
     "db_path": os.path.join(os.path.dirname(os.path.abspath(__file__)), "directory_structure.db"),
+    "cloudflare_account_id": cloudflare_account_id,  # Zmień na właściwe ID konta Cloudflare
+    "cloudflare_api_token": cloudflare_api_token,    # Zmień na właściwy token API Cloudflare
+    "cloudflare_database_id": cloudflare_database_id, # Zmień na właściwe ID bazy D1
     "ignore_dirs": [".git", "node_modules", "__pycache__", ".idea", ".vscode"],
     "ignore_files": [".DS_Store", "Thumbs.db", ".gitignore"],
     "ignore_extensions": [".pyc", ".pyo", ".pyd", ".class"]
