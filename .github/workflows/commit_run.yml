@@ -1,0 +1,15 @@
+name: Commit Run
+
+on:
+  push: # Uruchamiaj workflow przy każdym pushu (commit)
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Run tests (przykład)
+        run: python3 Strona/src/scan_directories.py
