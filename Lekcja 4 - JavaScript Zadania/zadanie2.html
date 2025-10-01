@@ -5,6 +5,26 @@
     <title>Title</title>
 </head>
 <body>
+    <script>
 
+        function poleKwadratu(bok)
+        {
+            return bok * bok;
+        }
+
+        function poleProstokata(a, b)
+        {
+            return a * b;
+        }
+
+        var bok = Number(prompt("Podaj bok kwadratu: "));
+        var b = parseFloat(prompt("Podaj bok a prostokąta: "));
+        var h = parseFloat(prompt("Podaj bok b (wysokość) prostokąta: "));
+
+        poleK = poleKwadratu(bok);
+        poleP = poleProstokata(b, h);
+
+        alert("Pole prostopadłościanu wynosi: " + poleK * poleP)
+    </script>
 </body>
 </html>
