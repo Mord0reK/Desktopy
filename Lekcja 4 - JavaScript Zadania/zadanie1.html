@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 1</title>
+</head>
+<body>
+    <script>
+        var a = Number(prompt("Podaj liczbę a: "));
+        var b = Number(prompt("Podaj liczbę b: "));
+        var t = 0
+
+        while (b !== 0)
+        {
+            t = b;
+            b = a % b;
+            a = t;
+        }
+
+        alert("NWD wynosi " + a)
+    </script>
+</body>
+</html>
