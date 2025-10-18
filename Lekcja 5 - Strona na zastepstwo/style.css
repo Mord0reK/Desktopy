@@ -3,19 +3,44 @@
     margin: 0;
     padding: 0;
     font-family: Cambria, serif;
+    color: black;
+}
+
+body
+{
     background-color: AntiqueWhite;
 }
 
-.naglowek
+header, footer
 {
     text-align: center;
     color: #fff;
-    background-color: #a0522c;
+    background-color: Sienna;
+    padding: 10px;
+}
+
+h1, nav, a
+{
+    background-color: Sienna;
+    color: #fff;
+}
+
+a:hover
+{
+    background-color: Peru;
 }
 
 nav
 {
     padding-bottom: 10px;
+}
+
+main
+{
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    background-color: linen;
 }
 
 a
@@ -24,4 +49,58 @@ a
     font-size: 1.25em;
     color: #fff;
     margin: 0 10px;
+}
+
+section
+{
+    background-color: #faf0e6;
+    padding: 10px;
+    margin-right: 10px;
+    width: 75%;
+}
+
+article
+{
+    margin: 15px;
+    background-color: #faf0e6;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid Sienna;
+}
+
+article:hover
+{
+    background-color: #f4e3d7;
+}
+
+aside
+{
+    width: 25%;
+    background-color: #fef6e4;
+    font-size: 90%;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid Sienna;
+    height: fit-content;
+}
+
+ul
+{
+    list-style-type: disc;
+    margin-left: 40px;
+}
+ul>li
+{
+    margin-bottom: 5px;
+    font-size: large;
+}
+
+footer > p
+{
+    color: #fff;
+}
+
+footer
+{
+    border-top: 2px solid Sienna;
 }
