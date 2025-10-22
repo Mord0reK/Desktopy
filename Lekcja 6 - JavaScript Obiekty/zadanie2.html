@@ -7,9 +7,27 @@
 <body>
     <h1>Zadanie 2</h1>
     <script>
-        liczba = window.prompt("Podaj liczbę: ");
+        srednia = 0;
+        tablica = [];
+        podzielne = [];
+        suma = 0;
 
-        document.write(Math.sqrt(liczba));
+        for (let i = 0; i < 20; i++)
+        {
+            tablica[i] = Math.round(Math.random() * 100 % 50);
+            if (tablica[i] % 3 == 0)
+            {
+                podzielne.push(tablica[i]);
+            }
+        }
+
+        for (let i = 0; i < podzielne.length; i++)
+        {
+            suma += podzielne[i];
+            document.write(podzielne[i] + " ");
+        }
+        srednia = suma / podzielne.length;
+        document.write("<br>Średnia: " + srednia);
     </script>
 </body>
 </html>
