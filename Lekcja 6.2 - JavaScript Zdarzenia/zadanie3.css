@@ -1,13 +1,11 @@
-*
-{
+* {
     margin: 0;
-
-.sekcja
+}
+#sekcja
 {
     background-color: #1b7721;
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: center;
 }
 
@@ -15,4 +13,31 @@ img
 {
     width: 150px;
     height: 150px;
+    margin: 5px;
+}
+
+#naglowek
+{
+    background-color: lightskyblue;
+    color: white;
+    text-align: center;
+}
+
+#tekst
+{
+    background-color: gray;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+p
+{
+    color: white;
+    max-width: 600px;
 }
