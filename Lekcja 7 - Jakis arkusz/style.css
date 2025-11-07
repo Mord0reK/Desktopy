@@ -1,11 +1,68 @@
-header img
-{
-    width: 100%;
-    z-index: -1
+body {
+    font-family: Verdana, sans-serif;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: white;
+    text-align: center;
+    background: linear-gradient(to bottom, teal, aliceblue);
 }
 
-nav
-{
-    display: flex;
-    justify-content: space-around;
+img {
+    width: 100%;
+    display: block;
+    position: fixed;
+    top: 70px;
+    left: 0;
+    z-index: -1;
+}
+
+nav {
+    margin-top: 0;
+}
+
+nav a {
+    font-size: 130%;
+    padding: 0 30px;
+    color: white;
+    text-decoration: none;
+}
+
+header {
+    background: rgba(160,82,45,0.6);
+    padding: 10px;
+    margin-top: 100px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+main {
+    background: sandybrown;
+    padding: 30px;
+}
+
+footer {
+    background: sienna;
+    padding: 30px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+h1 {
+    text-shadow: 2px 2px 5px black;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    border-collapse: collapse;
+    background: sienna;
+}
+
+table, th, td {
+    border: 1px solid sandybrown;
+}
+
+th, td {
+    padding: 8px;
 }
