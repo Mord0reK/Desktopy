@@ -4,9 +4,33 @@
 	<meta charset="UTF-8">
 	<meta name="viewport"
 		  content="width=device-width, initial-scale=1">
-	<title>Zadanie 1</title>
+	<title>Zadanie 13</title>
+	<style>
+		table, th, td {
+			border: 1px solid black;
+		}
+	</style>
 </head>
 <body>
-	<h1>Zadanie 1</h1>
+	<h1>Zadanie 13</h1>
+	<table id="tabela">
+		<tr>
+			<th>Liczba</th>
+			<th>Potęga</th>
+		</tr>
+	</table>
+	<script>
+		for (let i = 0; i < 10; i++)
+        {
+            let tr = document.createElement("tr");
+            let td1 = document.createElement("td");
+            let td2 = document.createElement("td");
+            td1.innerHTML = i;
+            td2.innerHTML = i * i;
+            tr.appendChild(td1);
+            tr.appendChild(td2);
+            document.getElementById("tabela").appendChild(tr);
+		}
+	</script>
 </body>
 </html>
