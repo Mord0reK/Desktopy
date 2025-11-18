@@ -4,9 +4,37 @@
 	<meta charset="UTF-8">
 	<meta name="viewport"
 		  content="width=device-width, initial-scale=1">
-	<title>Zadanie 1</title>
+	<title>Zadanie 18</title>
 </head>
 <body>
-	<h1>Zadanie 1</h1>
+	<h1>Zadanie 18</h1>
+	<div id="opisoceny">
+
+	</div>
+	<script>
+		var ocena = 1;
+        if (ocena === 1)
+        {
+            document.getElementById("opisoceny").innerHTML = "Ocena: " + ocena + " - Niedostateczny";
+		}
+        else if (ocena === 2) {
+            document.getElementById("opisoceny").innerHTML = "Ocena: " + ocena + " - Dopuszczający";
+		}
+        else if (ocena === 3) {
+            document.getElementById("opisoceny").innerHTML = "Ocena: " + ocena + " - Dostateczny";
+		}
+        else if (ocena === 4) {
+            document.getElementById("opisoceny").innerHTML = "Ocena: " + ocena + " - Dobry";
+		}
+        else if (ocena === 5) {
+            document.getElementById("opisoceny").innerHTML = "Ocena: " + ocena + " - Bardzo dobry";
+		}
+        else if (ocena === 6) {
+            document.getElementById("opisoceny").innerHTML = "Ocena: " + ocena + " - Celujący";
+		}
+        else {
+            document.getElementById("opisoceny").innerHTML = "Ocena: " + ocena + " - Nie ma takiej oceny"
+		}
+	</script>
 </body>
 </html>

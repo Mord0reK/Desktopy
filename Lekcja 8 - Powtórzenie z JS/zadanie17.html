@@ -4,9 +4,22 @@
 	<meta charset="UTF-8">
 	<meta name="viewport"
 		  content="width=device-width, initial-scale=1">
-	<title>Zadanie 1</title>
+	<title>Zadanie 17</title>
 </head>
 <body>
-	<h1>Zadanie 1</h1>
+	<h1>Zadanie 17</h1>
+	<div id="opis">
+
+	</div>
+	<script>
+        var liczba = 0;
+        if (liczba > 0) {
+            document.getElementById("opis").innerHTML = "<h2>" + liczba + " - Dodatnia liczba</h2>";
+        } else if (liczba === 0) {
+            document.getElementById("opis").innerHTML = "<h2>" + liczba + " - Liczba 0</h2>";
+        } else {
+            document.getElementById("opis").innerHTML = "<h2>" + liczba + " - Ujemna liczba</h2>";
+		}
+	</script>
 </body>
 </html>

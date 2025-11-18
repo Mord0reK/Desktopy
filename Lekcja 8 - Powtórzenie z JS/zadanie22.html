@@ -1,12 +1,23 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pl">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport"
-		  content="width=device-width, initial-scale=1">
-	<title>Zadanie 1</title>
+	<title>Zadanie 22</title>
 </head>
 <body>
-	<h1>Zadanie 1</h1>
+	<input type="range" id="suwak" min="1" max="100" value="0">
+	<div id="liczba">
+		0
+	</div>
+	<script>
+
+		var opa = document.getElementById("suwak");
+		var div = document.getElementById("liczba");
+
+		opa.addEventListener("input", function()
+		{
+			div.textContent = this.value;
+		});
+	</script>
 </body>
 </html>

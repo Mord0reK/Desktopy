@@ -4,9 +4,19 @@
 	<meta charset="UTF-8">
 	<meta name="viewport"
 		  content="width=device-width, initial-scale=1">
-	<title>Zadanie 1</title>
+	<title>Zadanie 21</title>
 </head>
 <body>
-	<h1>Zadanie 1</h1>
+<h1>Zadanie 21</h1>
+<button id="przycisk" onclick="klik()">Kliknij mnie</button>
+<script>
+    function klik()
+    {
+        const nie = document.createElement(`h1`);
+        nie.textContent = "witaj swiecie";
+        document.body.appendChild(nie);
+        document.getElementById("przycisk").style.display = `none`;
+    }
+</script>
 </body>
 </html>
