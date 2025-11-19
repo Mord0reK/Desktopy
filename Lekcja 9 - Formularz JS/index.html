@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="UTF-8">
+	<title>Formularz JavaScript</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div id="formularz-jakistam">
+		<form id="formularz">
+			<label for="imie">Imię: </label>
+			<input type="text" id="imie" name="imie"><br>
+			<label for="nazwisko">Nazwisko: </label>
+			<input type="text" id="nazwisko" name="nazwisko"><br>
+			<label for="klasa">Klasa: </label>
+			<input type="text" id="klasa" name="klasa"><br>
+			<label for="liczba1">Liczba 1: </label>
+			<input type="text" id="liczba1" name="liczba1"><br>
+			<label for="liczba2">Liczba 2: </label>
+			<input type="text" id="liczba2" name="liczba2"><br><br>
+			<input type="button" value="Wyślij!" onclick="formularz()">
+		</form>
+		<div id="wynik">
+
+		</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>

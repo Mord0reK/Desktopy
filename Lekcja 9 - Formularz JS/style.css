@@ -1,0 +1,10 @@
+#formularz-jakistam
+{
+    display: flex;
+    float: left;
+    margin: 20px;
+}
+#wynik
+{
+    margin-left: 20px;
+}
