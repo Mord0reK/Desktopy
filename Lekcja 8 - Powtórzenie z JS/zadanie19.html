@@ -1,13 +1,99 @@
-<!doctype html>
+<!--
+Zadanie 19: Zbadaj wartość logiczną wyrażeń: "",0,null,undefined,"abc"," ",7,-45.
+-->
+<!DOCTYPE html>
 <html lang="pl">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport"
-		  content="width=device-width, initial-scale=1">
-	<title>Zadanie 19</title>
+    <meta charset="UTF-8">
+    <title>zadanie20</title>
+    <style>
+        body
+        {
+            background-color: grey;
+        }
+
+    </style>
 </head>
 <body>
-	<h1>Zadanie 19</h1>
+<script>
+
+var pusty = "";
+
+if (pusty)
+{
+    document.write(pusty + " pusty string jest prawdziwy")
+}
+else
+{
+    document.write(pusty+ " pusty string jest falszywy")
+}
+var zero = null;
+
+if (zero)
+{
+    document.write("<br>" + zero + " jest prawdziwa")
+}
+else
+{
+    document.write("<br>" + zero + " jest falszywa")
+}
+
+var undefined = undefined;
+
+if (undefined)
+{
+    document.write("<br>" + undefined + " jest prawdziwa")
+}
+else
+{
+    document.write("<br>" + undefined + " jest falszywa")
+}
+
+var abc = "abc";
+
+if (abc)
+{
+    document.write("<br>" + abc + " jest prawdziwa")
+}
+else
+{
+    document.write("<br>" + abc + " jest falszywa")
+}
+
+var spacja = " ";
+
+if (spacja)
+{
+    document.write("<br>" + spacja + " spacja jest prawdziwa")
+}
+else
+{
+    document.write("<br>" + spacja + " spacja jest falszywa")
+}
+
+var liczba = 7;
+
+if (liczba)
+{
+    document.write("<br>" + liczba + " jest prawdziwa")
+}
+else
+{
+    document.write("<br>" + liczba + " jest falszywa")
+}
+
+var liczba2 = -45;
+
+if (liczba2)
+{
+    document.write("<br>" + liczba2 + " jest prawdziwa")
+}
+else
+{
+    document.write("<br>" + liczba2 + " jest falszywa")
+}
+</script>
+
 
 </body>
 </html>
