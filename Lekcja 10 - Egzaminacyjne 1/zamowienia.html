@@ -4,25 +4,62 @@
 	<meta charset="UTF-8">
 	<title>Fabryka Cukierków</title>
 	<link rel="stylesheet" href="style10.css">
+	<script src="script.js"></script>
 </head>
-<body>
-	<header class="naglowek">
-		<p>Zamów cukierki</p>
-		<img src="materialy/cukierki1.jpg"
-			 alt="tekst">
-	</header>
-	<header>
-
-	</header>
-	<main>
-
-	</main>
-	<main>
-
-	</main>
-	<footer>
-
-
-	</footer>
-</body>
+	<body>
+		<header class="naglowek">
+			<div class="element">
+				<a href="zamowienia.html">Zamów cukierki</a>
+				<img src="materialy/cukierki1.jpg" alt="tekst">
+			</div>
+			<div class="element">
+				<a href="index.html"><img src="materialy/cukierki2.png" alt="Nasze logo"></a>
+			</div>
+		</header>
+		<main class="xd">
+			<h1>Strefa zamówień</h1>
+		</main>
+		<main>
+			<div class="tresc">
+				<div>
+					<form action="">
+						<label for="ksztalt">Numer kształtu</label><br>
+						<input type="number" name="ksztalt" id="ksztalt"><br>
+						<label for="kolor">Skomponuj swój kolor, podaj kod RGB</label><br>
+						<a>R: </a><input type="number" name="R" id="R" min="0" max="255">
+						<a>G: </a><input type="number" name="G" id="G" min="0" max="255">
+						<a>B: </a><input type="number" name="B" id="B" min="0" max="255"><br>
+						<input type="button" onclick="funkcja()" value="Zamówienie">
+					</form>
+					<br>
+					<p id="zamowienie">Twoje zamówienie</p>
+					<br>
+					<button type="button" id="przycisk">Kolor</button>
+				</div>
+			</div>
+			<div class="tresc">
+				<div>
+				<h2>Nasza oferta</h2><br>
+				<table>
+					<tr>
+						<td colspan="2"><strong>Kształty</strong></td>
+						<td rowspan="2">Możesz zamówić<br>dowolny kolor cukierka</td>
+					</tr>
+					<tr>
+						<td>
+							<ol>
+								<li>cytryna</li>
+								<li>liść</li>
+								<li>banan</li>
+							</ol>
+						</td>
+					</tr>
+				</table>
+				</div>
+			</div>
+		</main>
+		<footer class="xd">
+			<p>Autor strony: 00000000000</p>
+		</footer>
+	</body>
 </html>

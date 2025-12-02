@@ -7,10 +7,40 @@
 header
 {
     background-color: rgb(146, 184, 112);
-    padding: 10px;
     display: flex;
     justify-content: space-between;
-    float: left;
+    align-items: center;
+}
+
+.element
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.element:first-child
+{
+    flex: 1;
+}
+
+.element:last-child
+{
+    flex: 1;
+}
+
+.element a
+{
+    color: purple;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.element a img
+{
+    max-width: 150px;
+    height: auto;
 }
 
 
@@ -19,9 +49,13 @@ main.xd
     letter-spacing: 10px;
 }
 
-main.tresc
+.tresc
 {
-
+    background-color: rgb(146, 184, 112);
+    display: flex;
+    float: left;
+    width: 50%;
+    height: 600px;
 }
 
 .xd
@@ -31,4 +65,25 @@ main.tresc
     color: white;
     text-align: center;
     padding: 10px;
+}
+
+
+tr td
+{
+    border: 2px dashed green;
+    padding: 20px;
+    text-align: center;
+}
+
+table
+{
+    border-spacing: 10px;
+    padding: 20px;
+    margin: 30px;
+    border: 2px dashed green;
+}
+
+footer
+{
+    height: 100px;
 }
