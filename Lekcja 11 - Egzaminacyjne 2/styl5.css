@@ -1,0 +1,34 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+
+.logo
+{
+    height: 70px;
+}
+
+.baner
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+    background-color: #1C59A7;
+    color: white;
+    height: 80px;
+}
+
+.panele
+{
+    display: flex;
+    width: 100%;
+}
+
+.lewy
+{
+    width: 33%;
+}

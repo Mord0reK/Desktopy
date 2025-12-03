@@ -15,7 +15,6 @@ function funkcja()
     let czerwony = document.getElementById("R").value
     let zielony = document.getElementById("G").value
     let niebieski = document.getElementById("B").value
-
-    console.log("rgb(" + czerwony + "," + zielony + "," + niebieski + ")")
+    
     document.getElementById("przycisk").style.backgroundColor = "rgb(" + czerwony + "," + zielony + "," + niebieski + ")"
 }
