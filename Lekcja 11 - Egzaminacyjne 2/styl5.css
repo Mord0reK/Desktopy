@@ -1,7 +1,6 @@
 *
 {
     margin: 0;
-    padding: 0;
 }
 
 
@@ -22,6 +21,7 @@
     height: 80px;
 }
 
+
 .panele
 {
     display: flex;
@@ -31,4 +31,41 @@
 .lewy
 {
     width: 33%;
+    background-color: #3A70B5;
+    height: 200px;
+}
+.srodkowy
+{
+    width: 33%;
+    background-color: #5A8AC8;
+    height: 200px;
+}
+
+.prawy
+{
+    width: 34%;
+    background-color: #86ACDD;
+    height: 200px;
+    text-align: center;
+}
+
+.regulamin
+{
+    background-color: yellow;
+    color: blue;
+    padding: 10px;
+}
+.dolny
+{
+    clear: both;
+    width: 100%;
+    background-color: #86ACDD;
+    text-align: center;
+    height: 300px;
+}
+
+footer
+{
+    background-color: #1C59A7;
+    color: white;
 }
