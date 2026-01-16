@@ -1,0 +1,23 @@
+.cos
+{
+    display: flex;
+    float: left;
+    width: 100%;
+}
+
+.lewy
+{
+    width: 50%;
+    background-color: cornflowerblue;
+}
+
+.prawy
+{
+    width: 50%;
+    background-color: cyan;
+}
+
+header
+{
+    text-align: center;
+}
