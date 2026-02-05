@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listy</title>
+</head>
+<body>
+    <h1>Lista</h1>
+    <ol id="lista">
+        <li>Jan</li>
+        <li>Anna</li>
+        <li>Piotr</li>
+        <li>Maria</li>
+        <li>Katarzyna</li>
+    </ol>
+    <button onclick="zmien()" >Zmień dane</button>
+
+    <script>
+        function zmien() 
+        {
+            var imiona = prompt("Podaj nowe imiona oddzielone przecinkami:");
+            if (imiona) {
+                var listaImion = imiona.split(",");
+                var listaElement = document.getElementById("lista");
+
+                listaElement.innerHTML = "";
+
+                for (var i = 0; i < listaImion.length; i++) {
+                    listaElement.innerHTML += "<li>" + listaImion[i] + "</li>";
+                }
+            }
+        }
+    </script>
+</body>
+</html>
