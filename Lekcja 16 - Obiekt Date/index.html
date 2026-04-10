@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obiekt Date</title>
+</head>
+<body>
+    <h1>Zadanie 1</h1>
+    <div id="wynik1"></div>
+    <script>
+        let data = new Date();
+        document.getElementById("wynik1").innerHTML = data;
+    </script>
+
+    <h1>Zadanie 2</h1>
+    <div id="wynik2"></div>
+    <script>
+        let dzien = data.getDate ();
+        let miesiac = data.getMonth () + 1;
+        let rok = data.getFullYear (); 
+        document.getElementById("wynik2").innerHTML = dzien + "-" + miesiac + "-" + rok;
+    </script>
+    
+    <h1>Zadanie 3</h1>
+    <div id="wynik3"></div>
+    <script>
+        
+        let godzina = data.getHours();
+        let minuta = data.getMinutes();
+        let sekundy = data.getSeconds();
+        document.getElementById("wynik3").innerHTML = godzina + ":" + minuta + ":" + sekundy;
+    </script>
+        
+    <h1>Zadanie 4</h1>
+    <div id="wynik4"></div>
+    <script>
+        const dniTygodnia = ["Niedziela", "Poniedziałek", "Wtorek", "Środa", "Czwartek", "Piątek", "Sobota"];
+        let dzienTygodnia = dniTygodnia[data.getDay()];
+        document.getElementById("wynik4").innerHTML = dzienTygodnia;
+    </script>
+            
+    <h1>Zadanie 5</h1>
+    <div id="wynik5"></div>
+    <script>
+        
+        let data2 = new Date(2030, 1, 1, 12, 30, 0);
+        document.getElementById("wynik5").innerHTML = data2;
+    </script>
+
+    <h1>Zadanie 6</h1>
+    <div id="wynik6"></div>
+    <script>
+        
+        switch (data.getDay())
+        {
+            case 1: document.getElementById("wynik6").innerHTML = "Poniedziałek"; break;
+            case 2: document.getElementById("wynik6").innerHTML = "Wtorek"; break;
+            case 3: document.getElementById("wynik6").innerHTML = "Środa"; break;
+            case 4: document.getElementById("wynik6").innerHTML = "Czwartek"; break;
+            case 5: document.getElementById("wynik6").innerHTML = "Piątek"; break;
+            case 6: document.getElementById("wynik6").innerHTML = "Sobota"; break;
+            case 7: document.getElementById("wynik6").innerHTML = "Niedziela"; break;
+        }
+    </script>
+
+    <h1>Zadanie 7</h1>
+    <div id="wynik7"></div>
+    <script>
+        
+        let data3 = data.getTime();
+        document.getElementById("wynik7").innerHTML = data3;
+    </script>
+
+    <h1>Zadanie 8</h1>
+    <div id="wynik8"></div>
+    <script>
+        let data4 = new Date();
+        data4.setDate(24);
+        data4.setMonth(12);
+        data4.setFullYear(2028);
+        data4.setHours(18);
+        data4.setMinutes(45);
+        document.getElementById("wynik8").innerHTML = data4;
+    </script>
+
+    <h1>Zadanie 9</h1>
+    <div id="wynik9"></div>
+    <script>
+        let data5 = data.getMonth() + 1;
+
+        if (data5 == 7 || data5 == 8)
+        {
+            document.getElementById("wynik9").innerHTML = "Są wakacje";
+        }
+        else
+        {
+            document.getElementById("wynik9").innerHTML = "Nie ma wakacji";
+        }
+    </script>
+</body>
+</html>
