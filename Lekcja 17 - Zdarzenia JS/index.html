@@ -14,12 +14,11 @@
     <script>
 
         const przycisk = document.getElementById('przycisk');
-
-        var tekst = document.getElementById('tekst').value
+        var tekst = document.getElementById('tekst');
 
         przycisk.addEventListener("click", function()
         {
-            document.getElementById('wynik').textContent = "Liczba znaków: " + tekst.length
+            document.getElementById('wynik').textContent = "Liczba znaków: " + tekst.value.length
         })
 
     </script>
