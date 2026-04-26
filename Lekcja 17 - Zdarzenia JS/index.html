@@ -6,5 +6,23 @@
 </head>
 <body>
 
+    <input type="text" id="tekst">
+    <button id="przycisk">Sprawdź długość</button>
+
+    <p id="wynik"></p>
+
+    <script>
+
+        const przycisk = document.getElementById('przycisk');
+
+        var tekst = document.getElementById('tekst').value
+
+        przycisk.addEventListener("click", function()
+        {
+            document.getElementById('wynik').textContent = "Liczba znaków: " + tekst.length
+        })
+
+    </script>
+
 </body>
 </html>
