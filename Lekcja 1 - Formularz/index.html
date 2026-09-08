@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="pierwsze">
+        <div style="width: auto;">
+            <a>Podaj liczbę dorosłych: </a><br>
+            <a>Podaj liczbę dzieci: </a><br>
+            <a>Podaj liczbę dni: </a>
+        </div>
+        <div>
+            <input type="number" id="dorosli" min="0" value="0"><br>
+            <input type="number" id="dzieci" min="0" value="0"><br>
+            <input type="number" id="dni" min="0" value="0"><br>
+            <input type="button" onclick="oblicz()" value="Oblicz">
+        </div>
+    </div>
+    <div id="wynik">
+        
+    </div>
+    <script>
+        function oblicz() {
+            var dorosli = document.getElementById("dorosli").value;
+            var dzieci = document.getElementById("dzieci").value;
+            var dni = document.getElementById("dni").value;
+
+            cena_dorosli = 35;
+            cena_dzieci = 25;
+
+            koszt = (dorosli * cena_dorosli + dzieci * cena_dzieci) * dni;
+            document.getElementById("wynik").innerHTML = "<a>Dokonałeś rezerwacji na " + dni + " dni </a><br> <a>dla  " + dorosli + " dorosłych i " + dzieci + " dzieci." + "</a><br>" + "<a> Koszt całkowity noclegów wynosi " + koszt + " zł.</a>";
+        }
+
+        
+    </script>
+</body>
+</html>

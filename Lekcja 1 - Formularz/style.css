@@ -1,0 +1,14 @@
+#pierwsze 
+{
+    display: flex;
+    float: left;
+    padding: 10px;
+    background-color: lightblue;
+}
+#wynik 
+{
+    clear: both;
+    padding: 10px;
+    background-color: lightgray;
+    width: 335px;
+}
