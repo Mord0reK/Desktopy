@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuerySelector</title>
+</head>
+<body>
+    <input type="radio" name="kolor" value="czarny">Czarny<br>
+    <input type="radio" name="kolor" value="biały">Biały<br>
+    <input type="radio" name="kolor" value="niebieski">Niebieski<br><br>
+    <button id="button" onclick="sprawdz()">Sprawdź</button>
+    <hr />
+    <input type="radio" name="jezyk" value="JavaScript">JavaScript<br>
+    <input type="radio" name="jezyk" value="Python">Python<br>
+    <input type="radio" name="jezyk" value="Java">Java<br>
+    <input type="radio" name="jezyk" value="C#">C#<br><br>
+    <button id="button" onclick="jezykprogramowania()">Sprawdź</button>
+    <div id="wynik">
+
+    </div>
+    <hr />
+    <input type="radio" name="ocena" value="1">1 - Bardzo źle<br>
+    <input type="radio" name="ocena" value="2">2 - Źle<br>
+    <input type="radio" name="ocena" value="3">3 - Średnio<br>
+    <input type="radio" name="ocena" value="4">4 - Dobrze<br>
+    <input type="radio" name="ocena" value="5">5 - Bardzo dobrze<br><br>
+    <button id="button" onclick="ocena()">Sprawdź</button>
+    <div id="wynikOcena">
+
+    </div>
+    <hr />
+    <p>Jaka metoda służy do pobrania elementu HTML za pomocą selektora CSS?</p>
+    <input type="radio" name="odpowiedz" value="1">getElementById()<br>
+    <input type="radio" name="odpowiedz" value="2">querySelector()<br>
+    <input type="radio" name="odpowiedz" value="3">createElement()<br>
+    <input type="radio" name="odpowiedz" value="4">addEventListener()<br><br>
+    <button id="button" onclick="quiz()">Sprawdź</button>
+    <div id="wynikQuiz">
+
+    </div>
+    <script>
+        function sprawdz(){
+          const wybrana = document.querySelector('input[name="kolor"]:checked').value;
+          console.log("Wybrałeś: " + wybrana)
+        }
+        function jezykprogramowania(){
+          const wybrana_jezyk = document.querySelector('input[name="jezyk"]:checked')
+          if (!wybrana_jezyk)
+          {
+            document.getElementById('wynik').innerHTML = '<p>Wybierz język</p>'
+          }
+          else
+          {
+            document.getElementById('wynik').innerHTML = '<p>Twój ulubiony język programowania to: ' + wybrana_jezyk.value + '</p>'
+          }
+        }
+
+        function ocena(){
+            const wybrana_ocena = document.querySelector('input[name="ocena"]:checked');
+            if (!wybrana_ocena)
+            {
+              document.getElementById('wynikOcena').innerHTML = '<p>Wybierz ocenę przez wysłaniem</p>';
+            }
+            else
+            {
+              document.getElementById('wynikOcena').innerHTML = '<p>Wybrana ocena: ' + wybrana_ocena.value + '</p>' + '<p>Dziękujemy za ocenę!</p>';
+            }
+        }
+
+        function quiz(){
+            var punkty = 0;
+            const wybrany_wybor = document.querySelector('input[name="odpowiedz"]:checked');
+            if (!wybrany_wybor)
+            {
+              document.getElementById('wynikQuiz').innerHTML = '<p>Wybierz odpowiedź!</p>';
+            }
+            else if (wybrany_wybor.value === '2')
+            {
+              var punkty = punkty + 1;
+              document.getElementById('wynikQuiz').innerHTML = '<p>Poprawna odpowiedź!</p>' + '<p>Otrzymałeś punkt</p>' + '<p>Masz teraz: ' + punkty + ' punktów</p>';
+            }
+            else
+            {
+              document.getElementById('wynikQuiz').innerHTML = '<p>Błędna odpowiedź.</p>';
+            }
+        }
+    </script>
+</body>
+</html>
