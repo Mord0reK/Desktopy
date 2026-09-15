@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listy</title>
+</head>
+<body>
+    <select id="miasto">
+        <option value="Warszawa">Warszawa</option>
+        <option value="Krakow">Kraków</option>
+        <option value="Siedlce">Siedlce</option>
+        <option value="Lublin">Lublin</option>
+    </select>
+    <br><br>
+    <input type="button" onclick="sprawdz_miasto()" value="Pokaż">
+    <p id="wynik_miasto"></p>
+    <script>
+      function sprawdz_miasto(){
+        var miasto = document.getElementById("miasto").value;
+        document.getElementById('wynik_miasto').textContent = "Wybrano miasto: " + miasto;
+      }
+    </script>
+    <br>
+
+
+    <hr>
+    <select id="kierunek">
+        <option selected value="Wybierz kierunek">Wybierz kierunek</option>
+        <option value="Technik ekonomista">Technik ekonomista</option>
+        <option value="Technik informatyk">Technik informatyk</option>
+        <option value="Technik handlowiec">Technik handlowiec</option>
+    </select>
+    <br><br>
+    <input type="button" onclick="sprawdz_kierunek()" value="Pokaż">
+    <p id="wynik_kierunek"></p>
+    <script>
+      function sprawdz_kierunek(){
+        var kierunek = document.getElementById("kierunek").value;
+
+        if (kierunek === "Wybierz kierunek")
+          {
+            document.getElementById('wynik_kierunek').textContent = "Wybierz kierunek"
+          }
+          else
+          {
+            document.getElementById('wynik_kierunek').textContent = "Wybrano kierunek: " + kierunek;
+          }
+      }
+    </script>
+    <hr>
+
+
+    <br>
+    <select id="kolor" onchange="ustaw_kolor()">
+        <option value="red">czerwony</option>
+        <option value="green">zielony</option>
+        <option value="blue">niebieski</option>
+    </select>
+    <br>
+    <p id="wynik_kolor">JavaScript jest językiem skryptowym</p>
+    <script>
+      function ustaw_kolor(){
+        var kolor = document.getElementById("kolor").value;
+
+        document.getElementById('wynik_kolor').style.color = kolor;
+      }
+    </script>
+    <hr>
+    <br>
+    <select id="rozmiar" onchange="ustaw_rozmiar()">
+        <option value="16px">16 px</option>
+        <option value="20px">20 px</option>
+        <option value="30px">30 px</option>
+        <option value="40px">40 px</option>
+    </select>
+    <br>
+    <p id="wynik_rozmiar">JavaScript jest językiem skryptowym</p>
+    <script>
+      function ustaw_rozmiar(){
+        var rozmiar = document.getElementById("rozmiar").value;
+
+        document.getElementById('wynik_rozmiar').style.fontSize = rozmiar;
+      }
+    </script>
+    <hr>
+    <br>
+
+
+    <select id="produkty" onchange="ustaw_produkty()">
+        <option value="3000">Laptop</option>
+        <option value="1200">Monitor</option>
+        <option value="100">Mysz</option>
+        <option value="200">Klawiatura</option>
+    </select>
+    <br>
+    <p id="wynik_produkty"></p>
+    <script>
+      function ustaw_produkty(){
+        var produkt = document.getElementById("produkty").value;
+
+        document.getElementById('wynik_produkty').textContent = "Cena produktu: " + produkt + " zł.";
+      }
+    </script>
+    <hr>
+    <br>
+
+
+    <select id="produkt_cena">
+        <option value="3000">Laptop – 3000 zł</option>
+        <option value="1200">Monitor – 1200 zł</option>
+        <option value="800">Drukarka – 800 zł</option>
+    </select>
+    <input id="ilosc" type="number" name="ilosc" min="1" value="1">
+    <br><br>
+    <input type="button" onclick="oblicz_cene()" value="Oblicz">
+    <p id="wynik_ceny"></p>
+    <script>
+      function oblicz_cene(){
+        var cena = Number(document.getElementById("produkt_cena").value);
+        var ilosc = Number(document.getElementById('ilosc').value);
+
+        document.getElementById('wynik_ceny').textContent = "Do zapłaty: " + cena * ilosc + " zł";
+      }
+    </script>
+    <hr>
+    <br>
+
+    <input id="cenaproduktu" type="number" name="cena_rabatu" placeholder="Cena produktu">
+    <select id="rabat">
+        <option value="0">Brak rabatu</option>
+        <option value="5">5%</option>
+        <option value="10">10%</option>
+        <option value="20">20%</option>
+    </select>
+    <br><br>
+    <input type="button" onclick="oblicz_rabat()" value="Oblicz">
+    <p id="wynik_rabatu"></p>
+    <script>
+      function oblicz_rabat(){
+        var cena = Number(document.getElementById('cenaproduktu').value);
+        var procent = Number(document.getElementById("rabat").value);
+        var kwota_rabatu = cena * procent / 100;
+
+        document.getElementById('wynik_rabatu').textContent = "Kwota rabatu: " + kwota_rabatu + " zł";
+      }
+    </script>
+    <hr>
+    <br>
+
+    <select id="ocena">
+        <option selected value="0">Wybierz ocenę</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+    </select>
+    <br><br>
+    <input type="button" onclick="sprawdz_ocene()" value="Pokaż komunikat">
+    <p id="wynik_oceny"></p>
+    <script>
+      function sprawdz_ocene(){
+        var ocena = Number(document.getElementById("ocena").value);
+        var komunikat;
+
+        if (ocena === 1){
+          komunikat = "Ocena niedostateczna";
+        } else if (ocena === 2){
+          komunikat = "Ocena dopuszczająca";
+        } else if (ocena === 3){
+          komunikat = "Ocena dostateczna";
+        } else if (ocena === 4){
+          komunikat = "Ocena dobra";
+        } else if (ocena === 5){
+          komunikat = "Ocena bardzo dobra";
+        } else if (ocena === 6){
+          komunikat = "Ocena celująca";
+        } else {
+          komunikat = "Wybierz ocenę";
+        }
+
+        document.getElementById('wynik_oceny').textContent = komunikat;
+      }
+    </script>
+    <hr>
+    <br>
+
+    <select id="tlo" onchange="ustaw_tlo()">
+        <option value="white">biały</option>
+        <option value="yellow">żółty</option>
+        <option value="lightgray">jasnoszary</option>
+        <option value="lightblue">jasnoniebieski</option>
+    </select>
+    <script>
+      function ustaw_tlo(){
+        var kolor_tla = document.getElementById("tlo").value;
+
+        document.body.style.backgroundColor = kolor_tla;
+      }
+    </script>
+    <hr>
+    <br>
+
+    <input id="liczba1" type="number" name="liczba1" placeholder="Liczba 1">
+    <input id="liczba2" type="number" name="liczba2" placeholder="Liczba 2">
+    <select id="dzialanie">
+        <option value="dodawanie">Dodawanie</option>
+        <option value="odejmowanie">Odejmowanie</option>
+        <option value="mnozenie">Mnożenie</option>
+        <option value="dzielenie">Dzielenie</option>
+    </select>
+    <br><br>
+    <input type="button" onclick="oblicz_dzialanie()" value="Oblicz">
+    <p id="wynik_kalkulatora"></p>
+    <script>
+      function oblicz_dzialanie(){
+        var liczba1 = Number(document.getElementById('liczba1').value);
+        var liczba2 = Number(document.getElementById('liczba2').value);
+        var dzialanie = document.getElementById('dzialanie').value;
+        var wynik;
+
+        if (dzialanie === "dodawanie")
+        {
+          wynik = liczba1 + liczba2;
+        }
+        else if (dzialanie === "odejmowanie")
+        {
+          wynik = liczba1 - liczba2;
+        }
+        else if (dzialanie === "mnozenie")
+        {
+          wynik = liczba1 * liczba2;
+        }
+        else if (dzialanie === "dzielenie")
+        {
+          if (liczba2 === 0)
+          {
+            wynik = "Nie można dzielić przez zero";
+          }
+          else
+          {
+            wynik = liczba1 / liczba2;
+          }
+        }
+
+        document.getElementById('wynik_kalkulatora').textContent = "Wynik: " + wynik;
+      }
+    </script>
+    <hr>
+    <br>
+</body>
+</html>
