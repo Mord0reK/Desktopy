@@ -1,0 +1,39 @@
+body{
+    margin: 0;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightgray;
+}
+
+#header > h1 {
+    width: auto;
+    margin: 0;
+    padding: 30px;
+    font-size: 70px;
+}
+
+#header > img {
+    width: 300px;
+    height: auto;
+}
+
+#obliczenia {
+    padding-top: 100px;
+    background-color: lightgreen;
+}
+
+#element {
+    background-color: gray;
+    width: auto;
+}
+
+#stopka {
+    background-color: royalblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

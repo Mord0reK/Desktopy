@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteka Math</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header" onmouseout="przywroc_pi()">
+        <img src="pi.webp" alt="PI" onmouseover="przenies_pi()">
+        <h1>Matematyka w JS</h1>
+    </div>
+    <div id="obliczenia">
+        <div id="element">
+            <div id="blizniacze">
+                Liczba 1: <input type="number" id="blizniacze-1"><br>
+                Liczba 2: <input type="number" id="blizniacze-2"><br>
+                <button id="blizniacze-oblicz">Sprawdź</button>
+            </div>
+        </div>
+        <div id="element">
+            <div id="szyfr-cezara">
+                Tekst: <input type="text" id="szyfr-cezara-1"><br>
+                <button id="szyfr-cezara-zaszyfruj">Zaszyfruj</button>
+                <div id="szyfr-cezara-wynik">
+
+                </div>
+                <button id="szyfr-cezara-odszyfruj">Odszyfruj</button>
+            </div>
+        </div>
+        <div id="element">
+            <div id="logarytm">
+                Podstawa: <input type="number" id="logarytm-1"><br>
+                Logarytmowana: <input type="number" id="logarytm-2"><br>
+                <button id="logarytm-oblicz">Oblicz</button>
+                <div id="logarytm-wynik">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="stopka">
+        <h1>Zrobił: Ropusza</h1>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
