@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date</title>
+</head>
+<body>
+    <h1>Ćwiczenie 1</h1>
+    <script>
+      let data1 = new Date();
+      document.write(data1)
+    </script>
+    <hr>
+    <h1>Ćwiczenie 2</h1>
+    <script>
+      let data2 = new Date();
+      document.write("Dzień miesiąca: " + data2.getDate() + "<br>")
+      document.write("Dzień tygodnia: " + data2.getDay() + "<br>")
+      document.write("Miesiąc: " + (data2.getMonth() + 1))
+    </script>
+    <hr>
+    <h1>Ćwiczenie 3</h1>
+    <script>
+      let data3 = new Date();
+      document.write("Godzina: " + data3.getHours() + "<br>")
+      document.write("Minuta: " + data3.getMinutes() + "<br>")
+      document.write("Sekunda: " + data3.getSeconds())
+    </script>
+    <hr>
+    <h1>Ćwiczenie 4</h1>
+    <script>
+    var data = new Date();
+    document.write("Dzien miesiaca: " +
+    data.getDate() + "<br>");
+    document.write("Dzien tygodnia: " +
+    data.getDay() + "<br>");
+    document.write("Miesiac: " +
+    (data.getMonth() + 1) + "<br>");
+    document.write("Godzina: " +
+    data.getHours() + "<br>");
+    document.write("Minuty: " +
+    data.getMinutes() + "<br>");
+    document.write("Sekundy: " +
+    data.getSeconds());
+    </script>
+    <hr>
+    <h1>Ćwiczenie 5</h1>
+    <script>
+    var data5 = new Date();
+      document.write(data5.toUTCString() + "<br>")
+      document.write(data5.toLocaleString())
+    </script>
+    <hr>
+    <h1>Ćwiczenie 6</h1>
+    <script>
+      var data6 = new Date();
+      data6.setDate(15);
+      document.write(data6)
+    </script>
+    <hr>
+    <h1>Ćwiczenie 7</h1>
+    <script>
+      var data7 = new Date();
+      data7.setHours(12);
+      data7.setMinutes(30);
+      data7.setSeconds(0);
+      document.write(data7)
+    </script>
+    <hr>
+    <h1>Ćwiczenie 8</h1>
+    <script>
+    var data8 = new Date();
+    document.write("Dzisiaj jest: " + data8 + "<br>");
+    document.write("Miesiac: " + (data8.getMonth() + 1) + "<br>");
+    document.write("Dzien miesiaca: " + data8.getDate() + "<br>");
+    document.write("Dzien tygodnia: " + data8.getDay() + "<br>");
+    </script>
+    <hr>
+    <h1>Ćwiczenie 10</h1>
+    <script>
+    var data10 = new Date();
+    document.write("Dzisiaj jest: " + data10 + "<br>")
+    document.write("Czas w GMT: " + data10.toUTCString() + "<br>")
+    document.write("Czas lokalny: " + data10.toLocaleString() + "<br>")
+    document.write("Miesiąc: " + (data10.getMonth() + 1) + "<br>")
+    document.write("Dzień miesiąca: " + data10.getDate() + "<br>")
+    document.write("Dzień tygodnia: " + data10.getDay() + "<br>")
+    document.write("Godzina: " + data10.getHours() + "<br>")
+    document.write("Minuty: " + data10.getMinutes() + "<br>")
+    document.write("Sekundy: " + data10.getSeconds() + "<br>")
+    </script>
+    <hr>
+</body>
+</html>
