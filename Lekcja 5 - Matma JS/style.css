@@ -1,4 +1,4 @@
-body{
+body {
     margin: 0;
 }
 
@@ -22,18 +22,43 @@ body{
 }
 
 #obliczenia {
-    padding-top: 100px;
+    padding: 32px 0;
     background-color: lightgreen;
-}
-
-#element {
-    background-color: gray;
-    width: auto;
-}
-
-#stopka {
-    background-color: royalblue;
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 10%;
+}
+
+#element {
+    background-color: lightgray;
+    width: 25.5%;
+    min-height: 452px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#element > div {
+    width: 100%;
+}
+
+#stopka {
+    background-color: deepskyblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button
+{
+    border: none;
+    background-color: yellowgreen;
+    padding: 10px 80px 10px 80px;
+}
+
+#logarytm-wynik
+{
+    font-size: 24px;
+
 }

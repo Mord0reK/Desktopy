@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Biblioteka Math</title>
+    <title>Matematyka w JS</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,26 +14,33 @@
     <div id="obliczenia">
         <div id="element">
             <div id="blizniacze">
+                <h2>Czy są bliźniacze?</h2>
                 Liczba 1: <input type="number" id="blizniacze-1"><br>
-                Liczba 2: <input type="number" id="blizniacze-2"><br>
-                <button id="blizniacze-oblicz">Sprawdź</button>
+                Liczba 2: <input type="number" id="blizniacze-2"><br><br>
+                <button id="blizniacze-oblicz" onclick="blizniacze_oblicz()">Sprawdź</button>
+                <div id="blizniacze-wynik"></div>
             </div>
         </div>
         <div id="element">
             <div id="szyfr-cezara">
-                Tekst: <input type="text" id="szyfr-cezara-1"><br>
-                <button id="szyfr-cezara-zaszyfruj">Zaszyfruj</button>
-                <div id="szyfr-cezara-wynik">
+                <h2>Szyfr Cezara</h2>
+                Tekst: <input type="text" id="szyfr-cezara-1"><br><br>
+                <button id="szyfr-cezara-zaszyfruj" onclick="zaszyfruj_cezar()">Zaszyfruj</button>
+                <div id="szyfr-cezara-wynik-zaszyfrowany">
+
+                </div><br>
+                <button id="szyfr-cezara-odszyfruj" onclick="odszyfruj_cezar()">Odszyfruj</button><br>
+                <div id="szyfr-cezara-wynik-odszyfrowany">
 
                 </div>
-                <button id="szyfr-cezara-odszyfruj">Odszyfruj</button>
             </div>
         </div>
         <div id="element">
             <div id="logarytm">
+                <h2>Logarytm</h2>
                 Podstawa: <input type="number" id="logarytm-1"><br>
-                Logarytmowana: <input type="number" id="logarytm-2"><br>
-                <button id="logarytm-oblicz">Oblicz</button>
+                Logarytmowana: <input type="number" id="logarytm-2"><br><br>
+                <button id="logarytm-oblicz" onclick="oblicz_logarytm()">Oblicz</button>
                 <div id="logarytm-wynik">
 
                 </div>
