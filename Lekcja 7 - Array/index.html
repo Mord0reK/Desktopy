@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Array</title>
+</head>
+<body>
+	<h1>Ćwiczenie 1</h1>
+	<script>
+	    var tablica = new Array("1", "2", "3", "4", "5");
+		for (i = 0; i<5; i++)
+		{
+		    document.write(tablica[i] + " ");
+		}
+	</script>
+	<br><br>
+	<h1>Ćwiczenie 2</h1>
+	<script>
+	    var tablica = new Array("Anna", "Kasia", "Basia", "Ola");
+		for (i = 0; i<tablica.length; i++)
+		{
+		    document.write(tablica[i] + " ");
+		}
+	</script>
+	<br><br>
+	<h1>Ćwiczenie 3</h1>
+	<script>
+	    var tablica = new Array(5);
+		for (i = 0; i<tablica.length; i++)
+		{
+		    tablica[i] = Math.round(Math.random() * 100 % 5);
+		}
+		document.write(tablica)
+	</script>
+	<br><br>
+	<h1>Ćwiczenie 4</h1>
+	<script>
+	    var tablica = new Array(10);
+		for (i = 0; i<tablica.length; i++)
+		{
+		    tablica[i] = prompt("Podaj " + Number(i + 1) + " element tablicy: ");
+		}
+		document.write(tablica)
+	</script>
+	<br><br>
+
+	<h1>Ćwiczenie 6</h1>
+	<script>
+       	var tab = new Array(5);
+       	for(var i=0; i<5; i++)
+       	{
+       	tab[i] = Math.round(Math.random()*100);
+       	}
+       	for(var i=0; i<5; i++)
+       	{
+       	document.write(tab[i] + "<br>");
+       	}
+	</script>
+	<br><br>
+
+	<h1>Ćwiczenie 7</h1>
+	<script>
+       	var tablica1 = new Array(5, 10, 15);
+        var tablica2 = new Array(20, 25, 30);
+        var tablica_polaczona = tablica1.concat(tablica2);
+        document.write(tablica_polaczona);
+	</script>
+	<br><br>
+
+	<h1>Ćwiczenie 8</h1>
+	<script>
+       	var tablica1 = new Array(5, 10, 15, 20);
+        tablica1.pop(3);
+        document.write(tablica1);
+	</script>
+	<br><br>
+
+	<h1>Ćwiczenie 9</h1>
+	<script>
+       	var tablica1 = new Array(5, 10, 15);
+        tablica1.push(20);
+        document.write(tablica1);
+	</script>
+	<br><br>
+
+	<h1>Ćwiczenie 10</h1>
+	<script>
+       	var tablica1 = new Array(1,2,3,4,5);
+        tablica1.reverse();
+        document.write(tablica1);
+	</script>
+	<br><br>
+
+	<h1>Ćwiczenie 11</h1>
+	<script>
+       	var tablica1 = new Array(8, 5, 36, 15, 2);
+        tablica1.sort((a, b) => a - b);
+        document.write(tablica1);
+	</script>
+	<br><br>
+
+	<h1>Ćwiczenie 13</h1>
+	<script>
+       	var tablica1 = new Array(5, 8, 36);
+        var tablica2 = new Array(15, 5, 123, 45)
+
+        var polaczona = tablica1.concat(tablica2)
+
+        document.write(polaczona + "<br>")
+
+        polaczona.sort((a, b) => a - b);
+
+        document.write(polaczona + "<br>")
+
+        polaczona.reverse()
+
+        document.write(polaczona + "<br>");
+	</script>
+	<br><br>
+
+	<h1>Ćwiczenie 14</h1>
+	<script>
+       	var tablica = new Array(2);
+        for (i = 0; i < 2; i++)
+          {
+            tablica[i] = [Math.round((Math.random() * 100) % 5), Math.round((Math.random() * 100) % 5)]
+          }
+        document.write(tablica)
+	</script>
+	<br><br>
+
+	<h1>Ćwiczenie 15</h1>
+	<script>
+       	var tablica = new Array(2);
+        for (i = 0; i < 2; i++)
+          {
+            tablica[i] = [Math.round((Math.random() * 100) % 5), Math.round((Math.random() * 100) % 5), Math.round((Math.random() * 100) % 5)]
+          }
+        for (i=0; i<2; i++)
+          {
+            document.write(tablica[i] + "<br>")
+          }
+	</script>
+	<br><br>
+</body>
+</html>
