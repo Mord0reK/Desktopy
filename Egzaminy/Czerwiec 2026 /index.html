@@ -4,8 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tatuaże</title>
+    <link rel="stylesheet" href="styl.css">
 </head>
 <body>
-    
+    <header id="naglowek1">
+        <img src="pliki16/logo_zmodyfikowane.png" alt="salon">
+    </header>
+    <header id="naglowek2">
+        <h1>Studio Tatuażu</h1>
+    </header>
+    <aside>
+        <h3>Dodaj wzór</h3>
+        <label for="wzor">Wzór: </label>
+        <input type="file" name="wzor" id="wzor" accept=".png"><br>
+        <label for="kolor">Kolor: </label>
+        <select id="kolor">
+            <option value="Czarny">Czarny</option>
+            <option value="Czerwony">Czerwony</option>
+            <option value="Zielony">Zielony</option>
+            <option value="Niebieski">Niebieski</option>
+        </select><br>
+        <label for="cena">Cena: </label>
+        <input type="number" name="cena" id="cena">
+        <button type="button" onclick="dodaj_wzor()">Dodaj Wzór</button>
+    </aside>
+    <section id="sekcja">
+        <h2>Galeria</h2>
+        <img src="pliki16/smok.png" alt="smok.png" class="miniatury">
+        <img src="pliki16/koliber.png" alt="koliber.png" class="miniatury">
+    </section>
+    <footer>
+        <p>Autor strony: Ropucha</p>
+    </footer>
+    <script>
+        function dodaj_wzor()
+        {
+            var wzor = document.getElementById('wzor').files[0].name
+            var kolor = document.getElementById('kolor').value
+            var cena = document.getElementById('cena').value
+
+            alert("Wzór: " + wzor + ", kolor " + kolor + " w cenie " + cena + " zł")
+
+            document.getElementById('sekcja').innerHTML +='<img src="pliki16/' + wzor + '" alt="' + wzor + '" class="miniatury">';
+        }
+    </script>
 </body>
 </html>
